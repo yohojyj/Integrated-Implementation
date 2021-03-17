@@ -1,0 +1,266 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button{margin:0; padding:0;}
+body,h1,h2,h3,h4,h5,h6 {font-size:12px; font-family: 'Noto Sans KR', sans-serif; color:#333;}
+a {text-decoration:none; color:#333;}
+img, fieldset {border:none; vertical-align:middle;}
+ul,ol,li {list-style: none;}
+strong,em,address {font-weight:normal; font-style:normal;}
+table {border-collapse:collapse;}
+
+
+#container{
+    width: 100%;
+    display: inline-flex;
+    /* background-color: teal; */
+}
+
+/* ------navigation------- */
+
+#side-nav {
+   width: 250px;
+   box-sizing: border-box;
+   font-size: 1.5rem;
+   font-weight: 400;
+   line-height: 2;
+}
+
+.pro-mypage-list{
+    width: 250px;
+    height: 200px;
+    flex-wrap: coulumn;
+}
+
+.pro-mypage-list > p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 20px 0 0 20px;
+}
+
+.nav-item{
+    padding-left:30px;
+}
+#pro-info{
+    height: 300px;
+    background-color: rgb(18, 177, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-box{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    /* background-color: rgb(177, 18, 92); */
+}
+
+#img-user-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* background-color: rgb(105, 18, 177); */
+}
+
+#user-info{
+    width:100%;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 15px;
+}
+#user-email{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#pro-profile{
+    background-color: rgb(235, 235, 235);
+}
+
+#pro-rsv{
+    background-color: rgb(249, 244, 227);
+}
+
+#haeyo-info{
+    background-color: rgb(235, 235, 235);
+}
+
+/* ------pro-mypage-profile------- */
+section{
+    width: 100%;
+    /* background-color: bisque; */
+    
+}
+#pro-mypage-content{
+    width: 1200px;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(236, 178, 178, 0.829); */
+}
+#pro-mypage-content > h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+#pro-mypage-profile{
+    width: 720px;
+    height: 1100px;
+    border-radius: 20px;
+    margin-top: 50px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: rgb(238, 238, 238);
+}
+
+#profile-review-box{
+    width: 100%;
+    height: 300px;
+    /* background-color: violet; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#userpic-box{
+    width: 210px;
+    height: 210px;
+    overflow: hidden;
+    /* background-color: rgb(177, 18, 92); */
+    position: relative;
+}
+
+#pro-mypage-thumb{
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* .click-icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:#05C3A7;
+    text-align: center;
+}
+.fa-camera{
+    padding-top: 10px;
+    font-size: 35px;
+    color: white;
+} */
+
+#profile-score{
+    width: 200px;
+    height: 130px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+#profile-review{
+    width: 200px;
+    height: 130px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.pro-mypage-info{
+    width: 100%;
+    /* background-color: palegreen; */
+}
+
+.pro-info-list{
+    width: 70%;
+    margin: 0 auto; 
+    /* background-color: salmon; */
+}
+
+.info-content1{
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    margin-bottom: 20px; 
+}
+
+.info-content2{
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    margin-bottom: 20px; 
+}
+
+.content{
+    width: 200px;
+    /* background-color: plum; */
+    padding: 5px;
+}
+
+.content-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.form-control{
+    width: 300px;
+}
+
+#pro-info-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.propage-btn{
+    border-radius: 30px; /*라운드*/
+    border: 1px solid #fff;/*버튼 stroke*/
+    background-color: #05C3A7;
+    color: #fff;
+    font-size: 14px;
+    width: 100px;/*버튼 가로*/
+    height: 35px;/*버튼 세로*/
+    margin-top: 40px;/*버튼 위 간격*/
+    cursor: pointer;/*버튼 마우스로 갖다 되었을 때 pointer표시*/
+    outline: 0; /*버튼 클릭시 생기는 라운드 제거*/
+    transition: 0.5s; /*버튼 hover시 변경 속도*/
+    margin-right: 20px;
+}
+
+.propage-btn:hover {
+    border: 1px solid #05C3A7;
+    background-color: #eee;
+    color: #05C3A7;
+    transition: 0.5s;
+}
+
+/* 임시 클래스 */
+.map{
+    width: 500px;
+    height: 250px;
+    background-color: gray; 
+}
+
+.file-image{
+    width: 100px;
+    height: 100px;
+    background-color: gray; 
+}
+

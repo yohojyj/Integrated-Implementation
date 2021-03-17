@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="professionDAO">
+
+	<resultMap id="professionResult" type="profession">
+		 <id property ="pNo" column="p_no"/>
+		 <result property="uNo" column="u_no"/>
+		 <result property="pAddress" column="p_Address"/>
+		 <result property="pLocX" column="p_loc_x"/>
+		 <result property="pLocY" column="p_loc_y"/>
+		 <result property="certification" column="certification"/>
+		 <result property="pPic" column="p_pic"/>
+		 <result property="pAgreecheck" column="p_agreecheck"/>
+		 <result property="pIntroduce" column="p_introduce"/>
+		 <result property="pCategory" column="p_category"/>
+		 <collection property="uName" column="" javaType="" resultMap="userResult">
+	</resultMap>
+	
+	<update id="updatePro">
+		<![CDATA[
+			UPDATE PROFESSIONS SET p_Address=#{pAddress}, p_loc_x=#{pLocX}, p_loc_y=#{pLocY},
+			certification=#{certification}, p_pic=#{pPic}, p_agreecheck=#{pAgreecheck}, 
+			p_introduce=#{pIntroduce}, p_category={pCategory}
+			WHERE p_no=#{pNo}
+		]]>
+	</update>
+	
+	<delete id="deletePro">
+		<![CDATA[
+			DELETE PROFESSIONS WHERE p_no=#{pNo}
+		]]>
+	</delete>
+	
+	<!-- 전문가 정보 가져오기: 기준 > 회원번호 -->
+	<select id="getPro" resultMap="professionResult">
+		<![CDATA[
+			SELECT * FROM professions WHERE u_no=#{uNO}
+		]]>
+	</select>
+
+
+      
+</mapper>
